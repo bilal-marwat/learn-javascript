@@ -1,0 +1,108 @@
+netscape navigator 1995 browser 
+brendan eich make javascript only 10 days
+javascrpt first name mocha 2nd name livescript
+
+ES5 2009
+
+ES6 2015 biggest uptades in the history
+
+ES7 2016
+
+ES8 2017
+
+
+javascript is  backword compatible 
+
+
+javascript is not froward compatible 
+
+
+commensts in js
+
+// comments some times in javascript file to see if it works or not 
+
+
+
+
+
+
+
+
+
+Variable  Variable
+ 
+
+
+Variable ko declare karne ka tareeka programming language par depend karta hai. Yahan kuch popular programming languages ke examples diye gaye hain:
+
+### Variable
+
+JavaScript mein `var`, `let`, aur `const` keywords ka istemal variable declare karne ke liye hota hai.
+
+1. **Using `var`:**
+   ```javascript
+   var age;
+   ```
+
+2. **Using `let`:**
+   ```javascript
+   let age;
+   ```
+
+3. **Using `const` (for constants, whose value can't be changed):**
+   ```javascript
+   const pi = 3.14;
+   ```
+
+### Python:
+
+Python mein variable declare karte waqt direct variable ka naam likha jata hai.
+
+```python
+age = 25
+```
+
+### Java:
+
+Java mein data type specify karte hue variable declare kiya jata hai.
+
+```java
+int age;
+```
+
+### C++:
+
+C++ mein data type specify karte hue variable declare kiya jata hai.
+
+```cpp
+int age;
+```
+
+### C#:
+
+C# mein data type specify karte hue variable declare kiya jata hai.
+
+```csharp
+int age;
+```
+
+### TypeScript:
+
+TypeScript mein `let` aur `const` ka istemal hota hai, jaise JavaScript mein.
+
+```typescript
+let age: number;
+const pi: number = 3.14;
+```
+
+### PHP:
+
+PHP mein variable declare karte waqt `$` dollar sign ka istemal hota hai.
+
+```php
+$age = 25;
+```
+
+Jab aap variable declare karte hain, aapko yeh yaad rakhna chahiye ki aapko variable ka naam choose karna padta hai, jo unique aur meaningful ho. Variable ka data type declare karna optional hota hai, kuch languages mein aapko specify karna padta hai (C, C++, Java, TypeScript), jabki kuch languages mein (JavaScript, Python, PHP) yeh optional hota hai.
+
+
