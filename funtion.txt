@@ -1,0 +1,48 @@
+what is funtion?
+
+
+function hamry liyee kaam karta hai programming mai matlab function aik nookar huta hai jo ham dety hai wo karta hai es tarhaa fuction b kaam karta hai
+
+
+
+
+====================NESTED FUNCTION===========================
+JavaScript mein ek function dusre function ke andar define kiya ja sakta hai. Is concept ko "nested functions" kehte hain. Jab aap ek function ke andar dusra function define karte hain, toh woh inner function outer function ke scope mein hoti hai. Inner function ko aap sirf us outer function ke andar hi call kar sakte hain.
+
+
+Yahan ek simple example hai:
+
+function outerFunction() {
+  console.log("Outer function");
+
+  function innerFunction() {
+    console.log("Inner function");
+  }
+
+  innerFunction(); // Inner function ko outer function ke andar call kiya ja raha hai
+}
+
+outerFunction(); // Outer function ko call kiya ja raha hai
+
+
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+output
+
+Outer function
+Inner function
+
+Is example mein, innerFunction outer function outerFunction ke andar define ki gayi hai. Jab outerFunction call hoti hai, toh innerFunction bhi call hoti hai.
+
+Inner function outer function ke scope ke andar hoti hai, isliye woh outer function ke variables aur parameters ko access kar sakti hai. Lekin, outer function inner function ke variables ya parameters ko directly access nahi kar sakta.
+
+Nested functions ka use modular code likhne mein hota hai, jisse code maintainability aur readability improve hoti hai.

@@ -1,0 +1,172 @@
+JavaScript mein, "objects" ek fundamental data type hai, jo ki key-value pairs (keys aur unke corresponding values) ka collection hota hai. Objects flexible hote hain aur aap unme diverse types ka data store kar sakte hain, jaise ki strings, numbers, arrays, functions, aur even other objects.
+
+
+
+
+JavaScript mein object keys hamesha strings hote hain, chahe aap numbers ya kuch aur use kyun na karen. Jab aap object ko create karte hain, agar aap number ko key ke tor par istemal karte hain, to JavaScript use automatically string mein convert kar dega
+
+
+
+
+
+object mai indxing nahii huta
+
+
+
+
+Ek basic object ka structure is tarah hota hai:
+
+let person = {
+  name: "John",
+  age: 30,
+  isStudent: false,
+  hobbies: ["reading", "coding"],
+  greet: function() {
+    console.log("Hello!");
+  }
+};
+
+
+
+
+Is example mein, person ek object hai, jisme keys hain name, age, isStudent, hobbies, aur greet, aur in keys ke corresponding values hain "John", 30, false, ["reading", "coding"], aur ek function jo "Hello!" print karta hai.
+
+Aap object ke values ko access karne ke liye dot notation (objectName.key) ya bracket notation (objectName['key']) ka istemal kar sakte 
+
+
+
+console.log(person.name);  // Output: John
+console.log(person['age']); // Output: 30
+
+
+
+Aap objects ko dynamically update bhi kar sakte hain:
+
+
+
+person.age = 31;
+person['isStudent'] = true;
+
+
+
+
+
+
+JavaScript mein objects bahut versatile hote hain aur inse related bahut saare concepts hain jaise prototype inheritance, object methods, aur more. Isse aap data ko organize aur manipulate karne mein flexibility pate hain.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+JavaScript mein object ke properties ko access karne ke liye do tareeqe hote hain: dot notation (.) aur bracket notation ([]).
+
+
+
+
+
+Dot Notation (.):
+
+
+
+
+
+
+
+
+
+Dot notation ka istemal tab kiya jata hai jab aap object ke property ko direct access karna chahte hain.
+Yeh simple aur conciseness ke saath istemal hota hai.
+
+
+
+
+EXAMPLE
+
+
+
+let myObject = {
+    name: "John",
+    age: 25
+};
+
+console.log(myObject.name);  // Outputs: John
+
+
+
+
+
+
+
+
+Bracket Notation ([]):
+
+
+
+
+
+Bracket notation ka istemal tab kiya jata hai jab aap object ke property ka naam variable ke through ya special characters ke saath access karna chahte hain.
+Ismein property ka naam string ke andar hota hai.
+
+
+
+
+
+Example:
+
+
+
+
+
+let myObject = {
+    name: "John",
+    age: 25
+};
+
+let propertyName = "name";
+console.log(myObject[propertyName]);  // Outputs: John
+
+
+
+Bracket notation ko istemal karke aap dynamic property names ka istemal kar sakte hain.
+
+
+
+
+Dono notations ka istemal keval valid property names ke liye hota hai. Agar property name mein koi special character ya space hai, ya agar wo JavaScript ke reserved words mein se ek hai, to aap bracket notation ka istemal karna padega.
+
+
+
+
+
+
+

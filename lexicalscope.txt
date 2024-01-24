@@ -1,0 +1,53 @@
+
+Lexical scope ek concept hai jo JavaScript mein hota hai aur yeh decide karta hai ki koi variable kahaan se accessible hai. Lexical scope ka matlab hai ki ek function ke scope mein define kiye gaye variables, us function ke andar hi accessible hote hain, aur us function ke bahar nahi.
+
+Jab aap ek function mein kisi variable ko define karte hain, toh woh variable us function ke lexical scope mein aata hai. Yeh variable function ke bahar ya kisi aur function ke andar directly access nahi ho sakta.
+
+
+
+                                     EXAMPLE
+
+
+function outerFunction() {
+  var outerVariable = "I am in outer function";
+
+  function innerFunction() {
+    var innerVariable = "I am in inner function";
+    console.log(outerVariable); // Accessible, kyunki outerFunction ke lexical scope mein hai
+  }
+
+  innerFunction();
+  // console.log(innerVariable); // Error! innerVariable outerFunction ke bahar hai, isliye accessible nahi hai
+}
+
+outerFunction()
+
+
+
+
+
+
+
+
+
+
+
+
+                                         GLOBAL SCOPE
+                                         
+Global scope ka matlab hota hai ki ek variable ya function jo ki code ke sabse bahar, sabse top level par define kiya gaya ho, woh pure code mein accessible hota hai. Global scope ka use variables ya functions ko code ke kisi bhi hisse mein access karne ke liye kiya jata hai.
+
+
+
+
+
+                                       FUNCTION SCOPE
+                                       
+Function scope ka matlab hota hai ki ek variable, jo ki ek function ke andar declare kiya gaya hai, woh function ke boundaries mein hi accessible hota hai. Iska matlab hai ki function scope mein define kiye gaye variables, sirf us function ke andar hi access kiye ja sakte hain, aur us function ke bahar nahi
+
+
+
+
+                                    BLOCK SCOPE
+                                    
+Block scope ka matlab hota hai ki ek variable, jo ki curly braces {} ke andar define kiya gaya hai, woh sirf us block ke andar hi accessible hota hai. Yeh concept ES6 (ECMAScript 2015) ke saath aaya hai, aur isme let aur const keywords ka istemal hota hai.

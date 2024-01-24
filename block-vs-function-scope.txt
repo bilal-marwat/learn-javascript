@@ -1,0 +1,21 @@
+Function Scope:
+
+Function scope ka matlab hai ki ek variable, jise aap ek function mein declare karte hain, woh sirf us function ke andar hi accessible hota hai. Iska scope function ke boundaries tak hi limited hota h
+
+function exampleFunction() {
+  var x = 10;
+  console.log(x);  // Accessible, kyunki x function ke andar declare hua hai
+}
+
+// console.log(x);  // Error! x function ke bahar accessible nahi hai
+
+
+Block Scope:
+
+Block scope ka concept relatively naya hai aur ES6 (ECMAScript 2015) ke saath aaya hai. Isme, variable let aur const keywords ke istemal se block level scope hasil hota hai.
+
+Block scope ka matlab hai ki ek variable jise aap block (curly braces ke beech) mein declare karte hain, woh sirf us block ke andar hi accessible hota hai.
+
+
+
+NOTED LET AND CONST ARE BLOCK SCOPE
