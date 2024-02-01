@@ -14,3 +14,14 @@ console.log(ans()); // direct print
 // const x = ans   // store and print
 // console.log(x());
 
+
+
+
+const myfun1 = () => {
+    const myfunc2 = () => {
+        console.log("Hello I am Inner Function 2") ;
+    }
+    return myfunc2
+}
+const b = myfun1()
+b()
